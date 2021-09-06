@@ -18,6 +18,10 @@ public class Hero {
         hero.getHit(this.baseDamage);
     }
 
+    public void attack (Monster monster) {
+        monster.getHit(this);
+    }
+
     public void getHit(Integer baseDamage){
         this.hp -= baseDamage;      // yg memanggil gethit adalah target hero (yg diserang)
         if (this.hp < 0) {
@@ -25,6 +29,9 @@ public class Hero {
         }
     }
 
+    public Integer getBaseDamage() {
+        return baseDamage;
+    }
 
     @Override
     public String toString() {
