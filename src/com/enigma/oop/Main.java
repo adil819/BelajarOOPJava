@@ -4,19 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        // instanceciate => inisiate instance / membuat objek
-//        Car pajero = new Car("Black",5);    // jangan terbalik positional arguments nya
-//        System.out.println(pajero);
-//        pajero.year = 2012;
-//        System.out.println(pajero); // output hashcode atau alamat memori nya
-//        System.out.println(pajero.color);
-//        System.out.println(pajero.fuel);
-//
-//        Motorbike yamaha = new Motorbike("Yamaha", 3);
-//        System.out.println(yamaha);
+        Rectangle rectangle = new Rectangle(6.0, 2.0);
+        System.out.println(rectangle.print());
+        System.out.println("Luas     : " + rectangle.getSurface());
+        System.out.println("Keliling : " + rectangle.getRound());
+        System.out.println("\n");
 
-        Car bmw = new Car("Blue",0);
-        bmw.fillFuel(5);
-        bmw.engineStart();
+        Block block = new Block(6.0, 2.0, 4.0);
+        System.out.println(block.print());
+        System.out.println("Luas     : " + block.getSurface());
+//        System.out.println("Keliling : " + block.getRound());
     }
 }
