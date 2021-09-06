@@ -33,5 +33,7 @@ public class Main {
 
         String number = "5";
         System.out.println(Integer.parseInt(number));  // kelebihan Integer (bukan int) bisa di parsing
+
+
     }
 }
