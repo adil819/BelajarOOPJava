@@ -9,9 +9,18 @@ public class Block extends Rectangle {
         this.height = height;
     }
 
+    public Double getVolume() {
+        return getSurface() * this.height;
+    }
+
     @Override
     public Double getSurface() {
         return 2 * (this.height * (this.length + this.width) + super.getSurface());
+    }
+
+    @Override
+    public Double getRound() {
+        return ( this.length + this.width + this.height) * 4;
     }
 
     @Override
