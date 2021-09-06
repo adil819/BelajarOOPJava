@@ -3,7 +3,7 @@ package com.enigma.oop;
 public class Car {
 
    public String color; // String dan Integer merupakan object yang disediakan oleh java, karena pada dasarnya semua yang ada di java merupakan objek
-   public Integer fuel; // coba ctrl+click, pasti bisa diklik karena "Integer" merupakan object, beda dengan "int"
+   private Integer fuel; // coba ctrl+click, pasti bisa diklik karena "Integer" merupakan object, beda dengan "int"
    public Integer year;
 
    // ALT + INSERT
@@ -16,7 +16,21 @@ public class Car {
 
    }
 
-   @Override
+   public void engineStart(){
+      if(this.fuel > 0){
+         System.out.println("Brum brum");
+      } else {
+         System.out.println("Insufficient fuel");
+      }
+   }
+
+   public void fillFuel(int fuel){
+      this.fuel += fuel;
+   }
+
+
+
+   @Override   // replace hashcode ketika sout objek class
    public String toString() {
       return "Car{" +
               "color='" + color + '\'' +
