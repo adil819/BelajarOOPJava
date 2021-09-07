@@ -22,9 +22,17 @@ public class Main {
 //        System.out.println(luna);
         // tes di attack sampai minus, harus ada validasi agar gaminus hp nya
 
-        luna.attack(monster);
+//        luna.attack(monster);
+//        System.out.println(monster);
 
-        System.out.println(monster);
 
+//        luna.attack(abaddon);
+//        System.out.println(abaddon);
+//        System.out.println(luna);
+
+        Tower tower = new Tower(500);
+        System.out.println(tower);
+        luna.attack(tower);
+        System.out.println(tower);
     }
 }

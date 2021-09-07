@@ -1,6 +1,6 @@
 package com.enigma.oop;
 
-public class Monster {
+public class Monster implements Hitable {
 
     private String name;
     private Integer hp;
@@ -12,10 +12,15 @@ public class Monster {
         this.baseDamage = baseDamage;
     }
 
-
-    public void getHit(Hero hero){
+    @Override
+    public void receiveDamage(Hero hero) {
         this.hp -= hero.getBaseDamage();
     }
+
+
+//    public void getHit(Hero hero){
+//        this.hp -= hero.getBaseDamage();
+//    }
 
     @Override
     public String toString() {
