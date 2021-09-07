@@ -12,5 +12,9 @@ public class Main {
 
         Circle circle = new Circle(7.0);
         System.out.println(circle.getArea());
+
+        ShapeCalculator shapeCalculator = new ShapeCalculator();
+        Double totalArea = shapeCalculator.sumArea(rectangle, square, circle);
+        System.out.println(totalArea);
     }
 }
