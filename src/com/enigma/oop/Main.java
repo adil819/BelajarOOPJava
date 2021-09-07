@@ -20,6 +20,7 @@ public class Main {
 //        luna.attack(abaddon);   // disebut object interaction
 //        System.out.println(abaddon);
 //        System.out.println(luna);
+        // tes di attack sampai minus, harus ada validasi agar gaminus hp nya
 
         luna.attack(monster);
 
