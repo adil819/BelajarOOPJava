@@ -16,7 +16,7 @@ public class Tower implements Hitable {
     }
 
     @Override
-    public void receiveDamage(Hero hero) {
-        this.hp -= hero.getBaseDamage();
+    public void receiveDamage(Integer baseDamage) {
+        this.hp -= baseDamage;
     }
 }

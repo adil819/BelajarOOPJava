@@ -1,6 +1,6 @@
 package com.enigma.oop;
 
-public class Hero implements Hitable {
+public class Hero implements Hitable, Attackable {
 
     private String name;
     private Integer hp;
@@ -14,15 +14,21 @@ public class Hero implements Hitable {
     }
 
     // Hero bisa menjadi parameter, sebenarnya sama konsepnya seperti String
-    public void attack (Hitable hitable) {
-//        hero.hp -= this.baseDamage;
-        hitable.receiveDamage(this);
-    }
+//    public void attack (Hitable hitable) {
+////        hero.hp -= this.baseDamage;
+//        hitable.receiveDamage(this);
+//    }
+
 
     @Override
-    public void receiveDamage(Hero hero) {
-        this.hp -= hero.getBaseDamage();
+    public void receiveDamage(Integer baseDamage) {
+        this.hp -= baseDamage;
     }
+    @Override
+    public void attack(Hitable hitable) {
+        hitable.receiveDamage(this.baseDamage);
+    }
+
 
     //    public void attack (Monster monster) {
 //        monster.getHit(this);

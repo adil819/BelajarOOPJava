@@ -13,6 +13,10 @@ public class Main {
 
         Monster monster = new Monster("Rogon", 300, 50);
 
+        Tower tower = new Tower(500);
+        System.out.println(tower);
+        luna.attack(tower);
+        System.out.println(tower);
 //        // object bisa menjadi parameter, tipe datanya "Hero"
 //        luna.attack(abaddon);   // disebut object interaction
 //        System.out.println(abaddon);
@@ -30,9 +34,5 @@ public class Main {
 //        System.out.println(abaddon);
 //        System.out.println(luna);
 
-        Tower tower = new Tower(500);
-        System.out.println(tower);
-        luna.attack(tower);
-        System.out.println(tower);
     }
 }
